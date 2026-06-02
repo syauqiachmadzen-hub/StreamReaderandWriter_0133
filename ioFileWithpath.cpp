@@ -32,5 +32,28 @@ int main()
         outfile << baris << endl;
 
     }
-    
+    //menutup file apabila telahselesai di tulis
+    outfile.close();
+
+    //membuka file dalam mode membaca
+    ifstream infile;
+
+    //menunjukkan ke sebuah file dengan ekstensi .txt
+    infile.open(NamaFile + ".txt", ios::in);
+
+    cout << endl << ">= Membuka dan membaca file" << endl;
+    //kondiisi jika file ada
+    if (infile.is_open())
+    {
+        //perulangan untuk menampilkan setiap baris
+        while (getline(infile, baris))
+        {
+            cout << baris << endl;
+        }
+        //menutup file jika telah selesai loop
+        infile.close();
+    }
+    //kondisi jika file tidak ada
+    else cout << "Unable to open file";
+    return 0;
 }
