@@ -2,3 +2,16 @@
 #include <fstream>
 #include <string>
 using namespace std;
+
+int main()
+{
+    //deklarasi variable baris untuk menyimpan data string
+    string baris;
+
+    //membuat file dalam mode menulis
+    ofstream outfile;
+    //menunjukan ke sebuah nama file
+    outfile.open("contohfile.txt");
+
+    
+}
