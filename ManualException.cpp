@@ -10,4 +10,6 @@ int main()
         //throw 0,5; //melemparkan sebuah integer  maka
         cout << "pernyataan tidak akan di tampilkan" << endl;
     }
+    //kondisi jika throw yang bertipe data integer
+    catch (int a)
 }
