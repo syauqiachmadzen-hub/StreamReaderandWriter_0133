@@ -12,4 +12,7 @@ int main()
     }
     //kondisi jika throw yang bertipe data integer
     catch (int a)
+    {
+        cout << "pengecualian akan di eksekusi" << endl;
+    }
 }
